@@ -1,4 +1,4 @@
-export function preload(assets, handler) {
+function preload(assets, handler) {
 
     let promises = [];
 
@@ -30,4 +30,9 @@ export function preload(assets, handler) {
 
     // call user's success handler when all assets are preloaded
     Promise.all(promises).then(handler);
+}
+
+export {
+
+    preload
 };
