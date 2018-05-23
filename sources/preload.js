@@ -32,7 +32,5 @@ function preload(assets, handler) {
     Promise.all(promises).then(handler);
 }
 
-export {
-
-    preload
-};
+// exports current module as a function
+export {preload};
